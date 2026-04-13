@@ -216,7 +216,7 @@
     <p>Une démo de recherche montrant comment les retours en temps réel sur la vie privée améliorent la conscience des utilisateurs lors du remplissage de formulaires web.</p>
   </header>
 
-  <!-- Bascule : Formulaire standard ↔ Formulaire intelligent -->
+  <!-- Bascule : Formulaire standard à Formulaire intelligent -->
   <div class="toggle-wrap" role="group" aria-label="Mode du formulaire">
     <button id="btn-standard" onclick="setMode('standard')">Formulaire standard</button>
     <button id="btn-smart"    onclick="setMode('smart')" class="active">Formulaire intelligent</button>
@@ -230,11 +230,11 @@
       ──────────────────────────────────────────────────────────────────
       Le score part de 0 et augmente à chaque champ rempli.
       Pondération par champ :
-        Faible   (Nom, Âge)              → +10 pts chacun
-        Moyen    (Courriel)              → +20 pts
-        Élevé    (Localisation, Téléphone) → +35 pts chacun
-      Maximum brut = 110 → normalisé et plafonné à 100.
-      La couleur de la barre passe de vert → orange → rouge.
+        Faible   (Nom, Âge)              -> +10 pts chacun
+        Moyen    (Courriel)              -> +20 pts
+        Élevé    (Localisation, Téléphone) -> +35 pts chacun
+      Maximum brut = 110 on le normalise et le plafonne à 100.
+      La couleur de la barre passe de vert à orange à rouge.
     -->
     <div class="privacy-panel smart-only" aria-live="polite">
       <div class="score-row">
@@ -269,10 +269,10 @@
       CHAMPS DU FORMULAIRE
       ────────────────────────────────────────────────────────────────
       Chaque champ possède :
-        data-weight → contribution au score de confidentialité quand rempli
-        data-level  → "low" | "med" | "high" (contrôle la couleur du badge)
-        data-hint   → message affiché sous le champ quand il est vide
-        data-warn   → avertissement affiché quand le champ est rempli
+        data-weight -> contribution au score de confidentialité quand rempli
+        data-level  -> "low" | "med" | "high" (contrôle la couleur du badge)
+        data-hint   -> message affiché sous le champ quand il est vide
+        data-warn   -> avertissement affiché quand le champ est rempli
     -->
     <form id="privacy-form" onsubmit="handleSubmit(event)" novalidate>
 
@@ -378,9 +378,9 @@
        Score = Math.min(round(raw / 110 * 100), 100)
 
        La couleur de la barre interpole linéairement sur trois paliers :
-         0   → vert   (#639922)
-         50  → orange (#ba7517)
-         100 → rouge  (#e24b4a)
+         0   -> vert   (#639922)
+         50  -> orange (#ba7517)
+         100 -> rouge  (#e24b4a)
     ================================================================ */
     const MAX_RAW = 110;
 
