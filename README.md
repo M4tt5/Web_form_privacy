@@ -98,5 +98,5 @@ Aucune dépendance externe n’est requise.
 
 ## Auteur
 
-Projet réalisé dans le cadre d’un travail académique sur la vie privée et les systèmes interactifs.
+Matthis DAVIAUD, Nolan  ECHASSERIEAU, Joshua MARTINOLI, Kyle DOTTIN
 
